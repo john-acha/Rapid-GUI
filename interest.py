@@ -50,7 +50,7 @@ class Form(QDialog):
         principal = self.principal_spinbox.value()
         rate = self.rate_spinbox.value()
         years = self.years_combobox.currentIndex() + 1
-        amount = principal * ((1 + (rate/100.0))**years)
+        amount = principal * ((1 + (rate / 100.0)) ** years)
         self.amount_edit.setText(f"${amount:.2f}")
 
 
